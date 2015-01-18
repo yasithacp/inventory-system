@@ -11,7 +11,7 @@
 
     <div class="row">
       <div class="col-md-12 center login-header">
-        <h1>Welcome to Selico-Plast</h1>
+        <h1>Welcome to Selico Enterprise</h1>
       </div>
       <%--/span--%>
     </div>
@@ -30,7 +30,7 @@
             Please login with your Username and Password.
           </div>
         </c:if>
-        <form name='loginForm' action="<c:url value='/j_spring_security_check' />"
+        <form name='loginForm' action="<c:url value='/auth/login_check?targetUrl=${targetUrl}' />"
               method='POST' class="form-horizontal">
           <fieldset>
             <div class="input-group input-group-lg">
@@ -47,8 +47,10 @@
             <div class="clearfix"></div>
 
             <div class="input-prepend">
-              <label class="remember" for="remember"><input type="checkbox" id="remember"> Remember
-                me</label>
+              <c:if test="${empty loginUpdate}">
+                <label class="remember" for="remember"><input type="checkbox" name="remember-me" id="remember"> Remember
+                  me</label>
+              </c:if>
             </div>
             <div class="clearfix"></div>
 
