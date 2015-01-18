@@ -1,16 +1,32 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: yasitha
-  Date: 1/15/15
-  Time: 10:41 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+<script src="/resources/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-</body>
-</html>
+<!-- library for cookie management -->
+<script src="/resources/js/jquery.cookie.js"></script>
+<!-- calender plugin -->
+<script src='/resources/bower_components/moment/min/moment.min.js'></script>
+<script src='/resources/bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+<!-- data table plugin -->
+<script src='/resources/js/jquery.dataTables.min.js'></script>
+
+<!-- select or dropdown enhancer -->
+<script src="/resources/bower_components/chosen/chosen.jquery.min.js"></script>
+<!-- plugin for gallery image view -->
+<script src="/resources/bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!-- notification plugin -->
+<script src="/resources/js/jquery.noty.js"></script>
+<!-- library for making tables responsive -->
+<script src="/resources/bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- tour plugin -->
+<script src="/resources/bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- star rating plugin -->
+<script src="/resources/js/jquery.raty.min.js"></script>
+<!-- for iOS style toggle switch -->
+<script src="/resources/js/jquery.iphone.toggle.js"></script>
+<!-- autogrowing textarea plugin -->
+<script src="/resources/js/jquery.autogrow-textarea.js"></script>
+<!-- multiple file upload plugin -->
+<script src="/resources/js/jquery.uploadify-3.1.min.js"></script>
+<!-- history.js for cross-browser state change on ajax -->
+<script src="/resources/js/jquery.history.js"></script>
+<!-- application script for Charisma demo -->
+<script src="/resources/js/charisma.js"></script>

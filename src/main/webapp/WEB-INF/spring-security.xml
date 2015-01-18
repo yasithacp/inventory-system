@@ -8,14 +8,14 @@
 
     <http auto-config="true" use-expressions="true">
 
-        <intercept-url pattern="/admin**" access="hasRole('ROLE_ADMIN')"/>
+        <intercept-url pattern="/main**" access="hasRole('ROLE_ADMIN')"/>
 
         <!-- access denied page -->
         <access-denied-handler error-page="/403"/>
 
         <form-login
                 login-page="/login"
-                default-target-url="/admin"
+                default-target-url="/main"
                 authentication-failure-url="/login?error"
                 username-parameter="username"
                 password-parameter="password"

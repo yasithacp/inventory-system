@@ -14,6 +14,7 @@
 <link href='${pageContext.request.contextPath}/resources/css/jquery.iphone.toggle.css' rel='stylesheet'>
 <link href='${pageContext.request.contextPath}/resources/css/uploadify.css' rel='stylesheet'>
 <link href='${pageContext.request.contextPath}/resources/css/animate.min.css' rel='stylesheet'>
+<link href='${pageContext.request.contextPath}/resources/css/custom.css' rel='stylesheet'>
 
 <!-- jQuery -->
 <script src="${pageContext.request.contextPath}/resources/bower_components/jquery/jquery.min.js"></script>
