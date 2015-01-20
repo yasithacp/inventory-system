@@ -43,9 +43,9 @@ $(document).ready(function () {
 
     function switchTheme(themeName) {
         if (themeName == 'classic') {
-            $('#bs-css').attr('href', '/resources/bower_components/bootstrap/dist/css/bootstrap.min.css');
+            $('#bs-css').attr('href', ctx + '/resources/bower_components/bootstrap/dist/css/bootstrap.min.css');
         } else {
-            $('#bs-css').attr('href', '/resources/css/bootstrap-' + themeName + '.min.css');
+            $('#bs-css').attr('href', ctx + '/resources/css/bootstrap-' + themeName + '.min.css');
         }
 
         $('#themes i').removeClass('glyphicon glyphicon-ok whitespace').addClass('whitespace');

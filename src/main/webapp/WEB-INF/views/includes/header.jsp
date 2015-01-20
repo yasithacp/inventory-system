@@ -8,7 +8,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.html"> <img alt="Charisma Logo" src="/resources/img/logo20.png"
+    <a class="navbar-brand" href="index.html"> <img alt="Charisma Logo" src="${pageContext.request.contextPath}/resources/img/logo20.png"
                                                     class="hidden-xs"/>
       <span>Selico Enterprise</span></a>
 
@@ -58,4 +58,5 @@
   function formSubmit() {
     document.getElementById("logoutForm").submit();
   }
+  var ctx = "${pageContext.request.contextPath}";
 </script>
