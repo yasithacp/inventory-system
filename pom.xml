@@ -14,7 +14,9 @@
     <spring.security.version>3.2.3.RELEASE</spring.security.version>
     <jstl.version>1.2</jstl.version>
     <mysql.connector.version>5.1.30</mysql.connector.version>
-    <javax.servlet.version>3.1.0</javax.servlet.version>
+    <javax.servlet.version>2.5</javax.servlet.version>
+    <hibernate.version>4.2.11.Final</hibernate.version>
+    <dbcp.version>1.4</dbcp.version>
   </properties>
 
   <dependencies>
@@ -26,16 +28,40 @@
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
+      <artifactId>servlet-api</artifactId>
       <version>${javax.servlet.version}</version>
-      <scope>provider</scope>
+    </dependency>
+    <!-- database pool -->
+    <dependency>
+      <groupId>commons-dbcp</groupId>
+      <artifactId>commons-dbcp</artifactId>
+      <version>${dbcp.version}</version>
+    </dependency>
+
+    <!-- Hibernate ORM -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>${hibernate.version}</version>
+    </dependency>
+    <!-- Spring + aspects -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aspects</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!-- ORM integration, e.g Hibernate -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>${spring.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
       <version>${spring.version}</version>
     </dependency>
-
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>

@@ -20,20 +20,9 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class MainController {
 
-    @RequestMapping(value = "/main**", method = RequestMethod.GET)
-    public ModelAndView mainPage() {
-
-        ModelAndView model = new ModelAndView();
-        model.addObject("title", "Spring Security Login Form - Database Authentication");
-        model.addObject("message", "This page is for ROLE_ADMIN only!");
-        model.setViewName("main");
-        return model;
-
-    }
-
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String rootPage() {
-        return "redirect:main";
+        return "redirect:users";
     }
 
     /**
